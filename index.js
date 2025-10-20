@@ -1,9 +1,10 @@
 require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors'); // <-- Add this line
 
 const app = express();
-app.use(cors());
+app.use(cors()); // <-- now cors is defined
 app.use(express.json());
 
 // ------------------ CONFIG ------------------ //
@@ -53,4 +54,5 @@ app.post('/send-whatsapp', async (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
