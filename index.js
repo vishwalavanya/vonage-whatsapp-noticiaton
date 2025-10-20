@@ -11,7 +11,7 @@ const VONAGE_API_SECRET = process.env.VONAGE_API_SECRET;
 const VONAGE_NUMBER = process.env.VONAGE_NUMBER; // Your Vonage/WhatsApp number (without +)
 
 // Hardcoded recipient (your WhatsApp number)
-const RECIPIENT_NUMBER = '9944490717'; 
+const RECIPIENT_NUMBER = '919944490717'; 
 
 if (!VONAGE_API_KEY || !VONAGE_API_SECRET || !VONAGE_NUMBER) {
     console.error("Please set VONAGE_API_KEY, VONAGE_API_SECRET, and VONAGE_NUMBER as environment variables");
